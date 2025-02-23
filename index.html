@@ -1,0 +1,98 @@
+<html>
+<head>
+<style>
+table
+{
+box-shadow:1px 1px 1px 2px #999;
+padding:30px;
+border-radius:5px;
+}
+input[type="text"],input[type="password"],input[type="date"],select
+{
+width:300px;
+height:45px;
+border:1px lightgrey solid;
+border-radius:6px;
+}
+textarea
+{
+border:1px lightgrey solid;
+border-radius:6px;
+}
+.b
+{
+background-color:#3498db;
+color:white;
+border:0px;
+width:120px;
+height:40px;
+padding:10px 20px;
+margin:10px;
+text-align:center;
+}
+#h
+{
+color:#3498db;
+font-size:28px;
+font-family:Arial;
+}
+</style>
+</head>
+<body>
+<form method="post" action="process.php">
+<table cellpadding="5" cellspacing="5" align="center">
+<tr>
+<th id="h">Registration</th>
+</tr>
+<tr>
+<td><input type="text" placeholder="Enter the Username"></td>
+</tr>
+<tr>
+<td><input type="password" placeholder="Enter the Password"></td>
+</tr>
+<tr>
+<td>Gender : </td>
+</tr>
+<tr>
+<td>
+<input type="radio" name="r" value="male">Male
+<input type="radio" name="r" value="Female">Female
+</td>
+</tr>
+<tr>
+<td>Date of Birth : </td>
+</tr>
+<tr>
+<td><input type="Date"></td>
+</tr>
+<tr>
+<td><textarea rows="6" cols="38" placeholder="Enter the Address"></textarea></td>
+</tr>
+<tr>
+<td>State : </td>
+</tr>
+<tr><td>
+<select name="state">
+  <option value="Tamilnadu">Tamilnadu</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Andhra">Andhra Pradesh</option>
+  <option value="Karnataka">Karnataka</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<input type="checkbox">I agree the terms
+</td>
+</tr>
+<tr>
+<td>
+<input type="Submit" value="Register" class="b">
+<input type="reset" value="Reset" class="b">
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
